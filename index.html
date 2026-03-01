@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>点数診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>市場価値スコア診断</h1>
+
+  <div class="form-group">
+    <label>社会人経験年数</label>
+    <input type="number" id="years" placeholder="例:5">
+  </div>
+
+  <div class="form-group">
+    <label>海外経験</label>
+    <select id="global">
+      <option value="0">なし</option>
+      <option value="1">あり</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>自営業経験</label>
+    <select id="business">
+      <option value="0">なし</option>
+      <option value="1">あり</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>専門スキル年数</label>
+    <input type="number" id="skill" placeholder="例:3">
+  </div>
+
+  <button onclick="diagnose()">診断する</button>
+
+  <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
